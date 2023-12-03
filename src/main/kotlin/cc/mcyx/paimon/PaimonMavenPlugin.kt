@@ -1,21 +1,14 @@
 package cc.mcyx.paimon
 
-import cc.mcyx.paimon.common.PaimonPlugin
-import org.apache.maven.artifact.DefaultArtifact
 import org.apache.maven.model.Dependency
 import org.apache.maven.plugin.AbstractMojo
 import org.apache.maven.plugins.annotations.Mojo
 import org.apache.maven.plugins.annotations.Parameter
 import org.apache.maven.project.MavenProject
-import org.apache.maven.shared.transfer.artifact.ArtifactCoordinate
-import org.sonatype.aether.RepositorySystemSession
-import org.sonatype.aether.repository.LocalRepository
-import org.sonatype.aether.repository.RemoteRepository
 import org.yaml.snakeyaml.Yaml
 import java.io.File
 import java.io.FileWriter
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.util.*
 import java.util.jar.JarFile
 
 /**
